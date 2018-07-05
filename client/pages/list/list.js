@@ -40,6 +40,20 @@ Component({
         "desc": "描述内容描述内容描述内",
         "name": "hehe"
       },
+      {
+        "id": 3,
+        "date": "2018-7-2",
+        "hostpital": "协和",
+        "labels": ['没救了', '等死吧', '等死吧', '等死吧', '等死吧', '等死吧'],
+        "image": ["wx47b749cba8fbf848.o6zAJs02Jqfu9-EImOJB5CzBm7Bk.2fJR8miilADO9f0fcea8ddc30fac53c258007b9536a8.png", 
+          "wx47b749cba8fbf848.o6zAJs02Jqfu9-EImOJB5CzBm7Bk.2fJR8miilADO9f0fcea8ddc30fac53c258007b9536a8.png",
+          "wx47b749cba8fbf848.o6zAJs02Jqfu9-EImOJB5CzBm7Bk.2fJR8miilADO9f0fcea8ddc30fac53c258007b9536a8.png",
+          "wx47b749cba8fbf848.o6zAJs02Jqfu9-EImOJB5CzBm7Bk.2fJR8miilADO9f0fcea8ddc30fac53c258007b9536a8.png",
+          "wx47b749cba8fbf848.o6zAJs02Jqfu9-EImOJB5CzBm7Bk.2fJR8miilADO9f0fcea8ddc30fac53c258007b9536a8.png",
+          "wx47b749cba8fbf848.o6zAJs02Jqfu9-EImOJB5CzBm7Bk.2fJR8miilADO9f0fcea8ddc30fac53c258007b9536a8.png","wx47b749cba8fbf848.o6zAJs02Jqfu9-EImOJB5CzBm7Bk.2fJR8miilADO9f0fcea8ddc30fac53c258007b9536a8.png"] ,
+        "desc": "描述内容描述内容描述内",
+        "name": "hehe"
+      },
     ],
     "id":0,
     "temp":3

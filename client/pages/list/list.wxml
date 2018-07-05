@@ -20,7 +20,7 @@
           <image src="../../resource/img/{{image_v}}" />
           <view wx:if="{{image_i==5 || image_i == item.image.length-1}}" class="image-footer">
             <block>
-            <image src="../../resource/img/stack_of_photos.png"/>{{item.image.length}}
+            <image src="img/stack_of_photos.png"/>{{item.image.length}}
             </block>
           </view>
         </view>
