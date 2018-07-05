@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/list/list",
     "pages/index/index",
     "pages/add/add",
     "pages/profiles/profiles"
@@ -8,7 +7,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/list/list",
+        "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
