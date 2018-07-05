@@ -1,0 +1,35 @@
+<view class="main">
+  <view class="index-item" wx:for="{{dataList}}" ws:key="item.id" wx:for-index="index" wx:for-item="item">
+    <view class="row item-date">
+      <text>{{item.date}}</text>
+    </view>
+    <view class="row item-name">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="row item-desc" wx:show="{{item.desc !=''}}">
+      <text>{{item.desc}}</text>
+    </view>
+    <view class="row">
+      <block>
+        <view class="item-labels" wx:if="{{i<5}}" wx:for="{{item.labels}}" ws:key="i" wx:for-index="i" wx:for-item="v">{{v}}</view>
+      </block>
+    </view>
+    <view class="row item-image">
+      <block wx:for="{{item.image}}" ws:key="image_i" wx:for-index="image_i" wx:for-item="image_v" >
+        <view class="item-image-body" wx:if="{{image_i<6}}">
+          <image src="../../resource/img/{{image_v}}" />
+          <view wx:if="{{image_i==5 || image_i == item.image.length-1}}" class="image-footer">
+            <block>
+            <image src="../../resource/img/stack_of_photos.png"/>{{item.image.length}}
+            </block>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+<!-- <scroll-view class="scroll" scroll-y="true" scroll-top="{{scrollTop}}" >
+  <block wx:for="{{dataList}}" wx:key="item.id">
+    <view class="item" data-index="{{index}}" id="item{{index}}">item {{index}}--{{item.name}}</view>
+  </block>
+</scroll-view> -->
