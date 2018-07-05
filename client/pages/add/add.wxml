@@ -1,0 +1,54 @@
+<scroll-view class="window-view" scroll-y="true">
+  <form class="formview" bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="date-area">
+      <picker name="illdate" mode="date" value="{{illdate}}" bindchange="bindDateChange">
+        <view class="picker" placeholder="{{illdate}}">
+          <text>{{illdate}}</text>
+          <!-- <input placeholder="{{date}}">></input> -->
+        </view>
+      </picker>
+    </view>
+
+    <view class="hospital-area">
+      <input name="hospital_name" placeholder="医院"></input>
+    </view>
+
+    <view class="image-area">
+      <view class="image-title">图片</view>
+      <view class="image-add">
+        
+        <view class="imgbtn-view">
+          <button class="addimg-btn" plain="true" bindtap="addImage"></button>
+          <image class="imgbtn-icon" src='../../resource/image/add.jpg'></image>
+        </view>
+        <scroll-view class="scroll-view_H" scroll-x="true" scroll-left="{{scrollLeft}}">
+          <block wx:for="{{imagepathList}}" wx:key="*this">
+            <image src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImage"></image>
+          </block> 
+        </scroll-view>
+      </view>
+    </view>
+
+    
+    <!-- <image wx:for="{{imagepathList}}" wx:key="unique"src="{{item}}" data-index="{{index}}" bindtap="previewImage"></image> -->
+    
+
+    <view class="desc-area">
+      <view class="desc-title">备注</view>
+        <view class="textarea-wrp">
+          <textarea name="description"/>
+        </view>
+    </view>
+
+    <view class="btn-area"> 
+      <button formType="submit">提交</button> 
+      <!-- <button formType="reset">重置</button> -->
+    </view> 
+    <!-- <block> -->
+      <!-- <button formType="submit">提交</button> -->
+    <!-- </block> -->
+    
+
+  </form>
+</scroll-view>

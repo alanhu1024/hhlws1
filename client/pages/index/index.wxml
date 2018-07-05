@@ -1,0 +1,20 @@
+<scroll-view class="scroll" scroll-y="true" scroll-top="{{scrollTop}}" >
+  <block wx:for="{{lists}}" wx:key="di">
+    <view class="item" data-index="{{index}}" id="item{{index}}">item {{index}}--{{di}}</view>
+  </block>
+</scroll-view>
+
+
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    
+  </block>
+  <view class="servertest">
+  <button bindtap="addCard">添加病历</button>
+</view>
+</view>
+
+

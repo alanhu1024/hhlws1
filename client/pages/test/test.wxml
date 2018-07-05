@@ -1,0 +1,54 @@
+<!--pages/test/test.wxml-->
+<view class="window_view">
+   <scroll-view class="scroll-view_H" scroll-x="true">
+      <view id="local" class="scroll-view-item_H local">
+         <view class='box'>
+            <image src='../../resource/image/1.png'></image>
+            <text>定位</text>
+         </view>
+      </view>
+      <view id="img" class="scroll-view-item_H img">
+         <view class='box'>
+            <image src='../../resource/image/2.png'></image>
+            <text>照片</text>
+         </view>
+      </view>
+      <view id="audio" class="scroll-view-item_H audio">
+         <view class='box'>
+            <image src='../../resource/image/3.png'></image>
+            <text>语音</text>
+         </view>
+      </view>
+      <view id="qrcode" class="scroll-view-item_H qrcode">
+         <view class='box'>
+            <image src='../../resource/image/4.png'></image>
+            <text>二维码</text>
+         </view>
+      </view>
+      <view id="qrcode" class="scroll-view-item_H qrcode">
+         <view class='box'>
+            <image src='../../resource/image/4.png'></image>
+            <text>二维码</text>
+         </view>
+      </view>
+      <view id="qrcode" class="scroll-view-item_H qrcode">
+         <view class='box'>
+            <image src='../../resource/image/4.png'></image>
+            <text>二维码</text>
+         </view>
+      </view>
+      <view id="qrcode" class="scroll-view-item_H qrcode">
+         <view class='box'>
+            <image src='../../resource/image/4.png'></image>
+            <text>二维码</text>
+         </view>
+      </view>
+      <view id="qrcode" class="scroll-view-item_H qrcode">
+         <view class='box'>
+            <image src='../../resource/image/4.png'></image>
+            <text>二维码</text>
+         </view>
+      </view>
+
+   </scroll-view>
+</view>
