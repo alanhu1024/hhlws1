@@ -10,7 +10,8 @@ Page({
       { place: "深圳" , di: "hh2"},
       { place: "上海" , di: "hh3"},
       { place: "广州" , di: "hh4"},
-      { place: "珠海" , di: "hh5"}
+      { place: "珠海" , di: "hh5"},
+      { place: "西安" , di: "hh6"}
     ],
     userInfo: {},
     hasUserInfo: false,
